@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  nav,
+  footer {
+    padding: 1% 0;
+    background-color: #aaa;
+  }
+  
+  nav {
+    position: fixed;
+    text-align: right;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .logo{
+    position: absolute;
+    left: 20px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  .navbardesktop li{
+    text-align: right;
+    list-style: none;
+    display: inline-block;
+    margin-left: .5em;
+  }
+
+  .navbardesktop:last-child{
+    margin-right: 20px;
+  }
+
+  header {
+    padding: 12% 0;
+  }
+
+  section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  section ul{
+    text-align: left;
+    list-style-type: circle;
+    padding-inline-start: 50px;
+  }
+
+.hamburger{
+    color: black;
+}
+
+.small {
+    font-size: .5em;
+    display: inline-block;
+}
+
+button {
+    background-color: darkgray;
+    border: solid black;
+    color: white;
+    font-size: 1.25em;
+}
+
+.pfimg{
+  width: 50%;
+}
+
+.tech{
+  text-align: center;
+  list-style: none;
+  padding-inline-start: 40px;
+}
+
+.litech img{
+  display: inline-block;
+  width: 1.5em;
+}
+
+.tech:nth-child(2) img{
+  width: 1em;
+}
+
+.litech{
+  display: inline;
+  margin-left: .5em;
+}
+
+.litech:first-child{
+  margin-left: 0;
+}
+
+.social {
+    display: inline;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.social li{
+  width: 25%;
+}
+
+.social img{
+  display: inline-block;
+  width: 10%;
+}
+
+.circle {
+    border: solid black;
+    border-radius: 50%;
+    width: 15%;
+}
+
+ul{
+  padding-inline-start: 0;
+}
