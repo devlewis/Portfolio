@@ -10,25 +10,30 @@
 <body>
     <nav role="navigation">
             <div class="logo">DL</div>
-            <div class="hamburger">&#9776;</div>
+            <div class="hamburger" onclick="toggleClass()">&#9776;</div>
             <ul class="navbardesktop">
-                <li>Portfolio</li>
-                <li>About Me</li>
-                <li>Github</li>
-                <li>Contact</li>
+                <li class="toportfoliomenu">Portfolio</li>
+                <li class="toaboutme">About Me</li>
+                <li onclick="toggleClass()"><a href="https://github.com/devlewis" target="_Blank">Github</a></li>
+                <li class="tocontact">Contact</li>
             </ul>
     </nav>
     <main role="main">
         
-        <header role="banner">
+        <header id="banner" role="banner">
             <h1>Hi, I'm Devree; <span class='small'>(rhymes with 'every');</span></h1>
             <h1>I'm a web developer.</h1>
-            <button>
+            <button class="toportfolio">
                     Portfolio&#8594;
             </button>
+            <br>
+            <br>
+            <br>
+            <br>
         </header>
 
-        <section>
+        <section id="aboutme">
+            <br></br>
            <p>I’m currently enrolled in Thinkful’s Engineering Flex program,<br> 
             where I love to solve problems and learn how to use new tools for creation.</p>
             <h2>MY FAVORITE THINGS</h2>
@@ -52,32 +57,34 @@
             <p>Devree Lewis</p>
         </section>
         
-        <section>
+        <section id="portfolio">
+            <br></br>
             <h2>PROJECTS</h2>
             <img class="pfimg" src="images/IMG_1855.png">
             <h3 class="left">Quiz app: European Capitals</h3> 
 
-            <p class="left">This quiz tests knowledge of and educates the user on lesser-known European capital cities.<br> 
+            <p class="left">This quiz tests knowledge of and educates the user on lesser-known European capital cities.<br></br> 
             Inspired by my own lack of knowledge of these lesser-known European capital cities.</p>
                     
-            <ul class="left" class="tech">
+            <ul class="tech">
                 <li class="litech"><img src="images/htmlicon.png"></li>
                 <li class="litech"><img src="images/cssicon.png"></li>
                 <li class="litech"><img src="images/jsicon.png" ></li>
             </ul>
                     
-            <ul class="left" class="sites"><li><a href="https://devlewis.github.io/quiz-app-final">European Capitals Quiz Live Site</a></li>
-            <li><a href="https://github.com/devlewis/quiz-app-final">European Capitals Quiz Repo</a></li>
+            <ul class="left sites">
+                <li><a class="hover" href="https://devlewis.github.io/quiz-app-final" target="_Blank">European Capitals Quiz Live Site</a></li>
+                <li><a class="hover" href="https://github.com/devlewis/quiz-app-final" target="_Blank">European Capitals Quiz Repo</a></li>
             </ul>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>Contact info</h2>
-            <p>Devree Lewis, web designer</p>
-            <p>Washington, D.C. Metro Area</p>
-            <ul>
-            <li><a href="email:devree.lewis@gmail.com" target="_Blank">Email Me:</a><span> devree.lewis@gmail.com</span></li>
-            <li><a href="https://www.linkedin.com/in/devreelewis/" target="_Blank">Linked In Profile</a></li>
+            <p>Who:<br>Devree Lewis, web developer</p>
+            <p>Where:<br>Washington, D.C. Metro Area</p>
+            <ul class="sites">
+            <li><a class="hover" href="email:devree.lewis@gmail.com" target="_Blank">Email Me:</a><span> devree.lewis@gmail.com</span></li>
+            <li><a class="hover" href="https://www.linkedin.com/in/devreelewis/" target="_Blank">Linked In Profile</a></li>
             </ul>
         </section>
 
@@ -90,5 +97,7 @@
             <li class="social"><a href="https://soundcloud.com/devree-lewis-cello" target="_Blank"><img src="images/iconfinder_32_soundcloud_353477.png"></a></li>
         </ul>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
