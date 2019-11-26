@@ -181,4 +181,13 @@ ul{
     .hamburger{
         display: none;
     }
+    .pfimg{
+      width: 30%;
+      text-align: left;
+      float: left;
+      padding-right: 3%;
+    }
+    .left{
+      text-align: left;
+    }
 }
