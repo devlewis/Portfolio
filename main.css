@@ -3,10 +3,10 @@
   }
   
   body {
-    font-family: "Open Sans",
+    font-family: "Rubik",
     sans-serif; 
     font-size: 20px;
-    color: #444;
+    color: rgb(22, 39, 150);
     text-align: center;
     line-height: 1.5;
   }
@@ -14,7 +14,7 @@
   nav,
   footer {
     padding: 1% 0;
-    background-color: #aaa;
+    background-color: rgb(22, 39, 150);
   }
   
   nav {
@@ -30,9 +30,11 @@
     position: absolute;
     left: 20px;
     margin-top: 20px;
+    color: rgb(255, 149, 197);
   }
 
   .navbardesktop li{
+    color: rgb(255, 149, 197);
     text-align: right;
     list-style: none;
     display: inline-block;
@@ -43,28 +45,36 @@
     margin-right: 20px;
   }
 
+  h1{
+    text-align: left;
+  }
+
   header {
     padding: 12% 0;
+    margin-top: 3em;
+    margin-left: .5em;
+    margin-right: .5em;
   }
 
   section {
     min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
+    padding: 6% 3%;
+    /* background-color: #F2F2F2; */
   }
   
   section:nth-child(even) {
-    background-color: #ddd;
+    background-color: rgb(255, 249, 252);
   }
-  
+
   section ul{
     text-align: left;
-    list-style-type: circle;
-    padding-inline-start: 50px;
+    list-style-type: disc;
+    margin-left: .75em;
+    padding-inline-start: .75em;
   }
 
 .hamburger{
-    color: black;
+    color: rgb(255, 149, 197);
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -76,25 +86,26 @@
 }
 
 button {
-    background-color: darkgray;
-    border: solid black;
-    color: white;
+    background-color: rgb(255, 149, 197);
+    border: solid #232B60;
+    color: #232B60;
     font-size: 1.25em;
+    display: block;
 }
 
 .pfimg{
-  width: 50%;
+  width: 65%;
 }
 
 .tech{
   text-align: center;
   list-style: none;
-  padding-inline-start: 40px;
+  padding-inline-start: 0;
 }
 
 .litech img{
   display: inline-block;
-  width: 1.5em;
+  width: 2em;
 }
 
 .tech:nth-child(2) img{
@@ -110,23 +121,31 @@ button {
   margin-left: 0;
 }
 
-.social {
-    display: inline;
-    border-radius: 50%;
-    background-color: black;
+.sites{
+    list-style: none;
+    padding-inline-start: 0;
+    font-size: .9em;
 }
 
-.social li{
-  width: 25%;
+.social {
+    display: inline-block;
+    border-radius: 50%;
+    width: 20%;
 }
 
 .social img{
-  display: inline-block;
-  width: 10%;
+    display: inline-block;
+    width: 80%;
+  }
+
+.socialtech{
+    text-align: center;
+    list-style: none;
+    display: inline-block;
 }
 
 .circle {
-    border: solid black;
+    border: solid #232B60;
     border-radius: 50%;
     width: 15%;
 }
@@ -135,9 +154,26 @@ ul{
   padding-inline-start: 0;
 }
 
+.contact ul{
+    list-style: none;
+}
+
 @media(max-width: 425px){
     .navbardesktop{
         display: none;
+    }
+
+    .circle{
+        width: 60%;
+    }
+
+    nav{
+        font-size: 1.5em;
+    }
+
+    .logo, .hamburger{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
