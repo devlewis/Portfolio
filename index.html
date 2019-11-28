@@ -3,11 +3,13 @@
 <head>
     <title>Devree Lewis Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio for Devree Lewis, new web dev">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 </head>
 <body>
+    <img id="image" class="image" src="images/pinkclouds.5.png" alt="pink clouds">
     <nav role="navigation">
             <div class="logo">DL</div>
             <div class="hamburger" onclick="toggleClass()">&#9776;</div>
@@ -26,50 +28,45 @@
             <button class="toportfolio">
                     Portfolio&#8594;
             </button>
-            <br>
-            <br>
-            <br>
-            <br>
         </header>
 
         <section id="aboutme">
-            <br></br>
+           <br></br>
            <p>I’m currently enrolled in Thinkful’s Engineering Flex program,<br> 
             where I love to solve problems and learn how to use new tools for creation.</p>
             <h2>MY FAVORITE THINGS</h2>
-            <ul>
+            <ul class="first">
                 <li>JavaScript, [insert more here as I progress. . . ]</li>
                 <li> Learning
-                    <ul><li>programming languages, spoken languages, new recipes, etc. </li></ul>
+                    <ul class="second"><li>programming languages, spoken languages, new recipes, etc. </li></ul>
                 </li>
                 <li>Efficient collaboration</li>    
                 <li>Good and clear communication 
-                    <ul><li>Relatedly: well-written stories (ex. Breaking Bad; Hamlet; The Phantom Tollbooth)</li></ul>
+                    <ul class="second"><li>Relatedly: well-written stories (ex. Breaking Bad; Hamlet; The Phantom Tollbooth)</li></ul>
                 </li>      
             </ul>
             <h2>WHEN I'M NOT CODING, I'M:</h2>
-            <ul>
+            <ul class="inline">
                 <li>A performing cellist, classical and other genres</li> 
                 <li>An avid reader</li>
                 <li>A consumer of stories via screen (TV)</li>
             </ul>
-            <img class="circle" src="images/GlassesHeadshot.png">
-            <p>Devree Lewis</p>
+            <img class="circle" src="images/GlassesHeadshot.png" alt="Devree Lewis headshot">
         </section>
         
         <section id="portfolio">
             <br></br>
             <h2>PROJECTS</h2>
-            <img class="pfimg" src="images/IMG_1855.png">
+            <img class="pfimg" src="images/IMG_1855.png" alt="European Capitals Quiz mobile screenshot">
             <h3 class="left">Quiz app: European Capitals</h3> 
 
             <p class="left">This quiz tests knowledge of and educates the user on lesser-known European capital cities.<br></br> 
             Inspired by my own lack of knowledge of these lesser-known European capital cities.</p>
                     
             <ul class="tech">
-                <li class="litech"><img src="images/htmlicon.png"></li>
-                <li class="litech"><img src="images/cssicon.png"></li>
-                <li class="litech"><img src="images/jsicon.png" ></li>
+                <li class="litech"><img src="images/htmlicon.png" alt="html icon"></li>
+                <li class="litech"><img src="images/cssicon.png" alt="css icon"></li>
+                <li class="litech"><img src="images/jsicon.png" alt="javascript icon" ></li>
             </ul>
                     
             <ul class="left sites">
@@ -80,16 +77,18 @@
 
         <section id="contact">
             <h2>CONTACT ME</h2>
+            <div>
             <p>Who:<br>Devree Lewis, web developer</p>
-            <p>Where:<br>Washington, D.C. Metro Area</p>
-            <ul class="sites">
+            <p>Where:<br>Washington, D.C. Metro Area
+            <br>
+            <ul>
             <li><a class="hover" href="email:devree.lewis@gmail.com" target="_Blank">Email Me:</a><span> devree.lewis@gmail.com</span></li>
             <li><a class="hover" href="https://github.com/devlewis" target="_Blank">GitHub Profile</a></li>
             <li><a class="hover" href="https://www.linkedin.com/in/devreelewis/" target="_Blank">Linked In Profile</a></li>    
-        </ul>
-        </section>
-
+        </ul></p></div>
+        </section>  
     </main>
+    <img class="imagebottom" src="images/pinkclouds.75.png" alt="pink clouds">  
     <footer role="content-info">
         <ul class="socialtech">
             <li class="social"><a href="https://github.com/devlewis" target="_Blank"><img src="images/iconfinder_social_media_logo_github_1221585.png"></a></li>

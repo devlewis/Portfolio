@@ -3,18 +3,36 @@
   }
   
   body {
-    font-family: "Rubik",
-    sans-serif; 
+    font-family: 'Rubik', sans-serif; 
     font-size: 20px;
     color: rgb(22, 39, 150);
     text-align: center;
     line-height: 1.5;
   }
   
-  nav,
+  .image{
+    width: 100%;
+    height: 210px;
+  }
+
+  .imagebottom{
+    width: 100%;
+    background-color: rgb(255, 249, 252);
+    display: flex;
+    align-self: end;
+    z-index: -1; 
+  }
+
+  nav{
+    padding: 1% 0;
+    background-color: rgb(22, 52, 150);
+    z-index:-1;
+  }
+
   footer {
     padding: 1% 0;
-    background-color: rgb(22, 39, 150);
+    background-color: rgb(22, 52, 150);
+    /* z-index:-1; */
   }
   
   nav {
@@ -27,20 +45,20 @@
   }
 
   .logo{
-    font-size: 1.25em;
+    font-size: 1.5em;
     position: absolute;
     left: 20px;
     margin-top: 20px;
-    color: rgb(255, 149, 197);
+    color: rgb(255, 228, 254);
   }
 
   .logo:hover{
-    color: white;
+    color: rgb(240, 97, 204);
     cursor: pointer;
   }
 
   .navbardesktop li{
-    color: rgb(255, 149, 197);
+    color: rgb(255, 228, 254);
     text-decoration: none;
     text-align: right;
     list-style: none;
@@ -49,20 +67,15 @@
   }
 
   .navbardesktop a{
-    color: rgb(255, 149, 197);
+    color: rgb(255, 228, 254);
     text-decoration: none;
     text-align: right;
     list-style: none;
     display: inline-block;
   }
 
-  .navbardesktop li:hover{
-    color: white;
-    cursor: pointer;
-  }
-
-  .navbardesktop a:hover{
-    color: white;
+  .navbardesktop li:hover, .navbardesktop a:hover{
+    color: rgb(240, 97, 204);
     cursor: pointer;
   }
 
@@ -72,14 +85,11 @@
 
   h1{
     text-align: left;
+    padding-right: auto;
   }
 
   header {
-    padding: 12% 0;
-    margin-top: 3em;
-    margin-left: .5em;
-    margin-right: .5em;
-    margin-bottom: 10em;
+    margin-bottom: 15.5em;
   }
 
   section {
@@ -91,7 +101,7 @@
     background-color: rgb(255, 249, 252);
   }
 
-  section ul{
+  section#aboutme ul{
     text-align: left;
     list-style-type: disc;
     margin-left: .75em;
@@ -99,8 +109,8 @@
   }
 
 .hamburger{
-    font-size: 2em;
-    color: rgb(255, 149, 197);
+    font-size: 1.5em;
+    color: rgb(255, 228, 254);
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -116,7 +126,7 @@
 }
 
 button {
-    background-color: rgb(255, 149, 197);
+    background-color: rgb(255, 228, 254);
     border: solid rgb(22, 39, 150);
     color: rgb(22, 39, 150);
     font-size: 1.25em;
@@ -125,8 +135,12 @@ button {
 
 button:hover{
     background-color: rgb(22, 39, 150);
-    color: rgb(255, 149, 197);
+    color: rgb(255, 228, 254);
     cursor: pointer;
+}
+
+#portfolio{
+  margin-bottom: 5em;
 }
 
 .pfimg{
@@ -166,27 +180,26 @@ button:hover{
     padding-left: 2em;
 }
 
-.sites li{
-  margin-block-start: .75em;
-  margin-block-end: .75em;
-}
-
 a.hover{
   color: blue;
 }
 
 a.hover:visited{
-  color:purple;
+  color: purple;
 }
 
 .social {
     display: inline-block;
     width: 23%;
+    vertical-align: middle;
 }
 
-/* .social:nth-child(2){
+.social:nth-child(2) img{
     background-color: white;
-} */
+    border: solid rgb(22, 39, 150) 1px;
+    border-radius: 14%;
+    width: 70%
+}
 
 .social img{
     display: inline-block;
@@ -196,13 +209,12 @@ a.hover:visited{
 .socialtech{
     text-align: center;
     list-style: none;
-    display: inline-block;
 }
 
 .circle {
-    border: solid rgb(22, 39, 150);
+    border: solid rgb(22, 39, 150) 3px;
     border-radius: 50%;
-    width: 50%;
+    width: 40%;
 }
 
 ul{
@@ -210,25 +222,24 @@ ul{
 }
 
 #contact {
-  padding-top: 5em;
+  padding-top: 6em;
   padding-bottom: 3em;
 }
 
-#contact p{
+#contact div{
   text-align: left;
-  padding-left: 2em;
-  margin-left: .75em;
+  padding-left: 1em;
 }
+
 #contact ul{
-    list-style: none;
+  list-style: none;
 }
 #contact li{
   text-align: left;
 }
 
+@media(max-width: 599px){
 
-
-@media(max-width: 425px){
     .navbardesktop{
         display: none;
     }
@@ -245,24 +256,30 @@ ul{
         font-size: 1.5em;
     }
 
-    .logo, .hamburger{
-        font-size: 1em;
+   .logo, .hamburger{
         margin-top: 5px;
         margin-bottom: 5px;
     }
 
     .logo:hover{
-      color:rgb(255, 149, 197)
+      color: white;
       cursor: pointer;
     }
 
     .sites{
       text-align: center;
-      font-size: .95em;
+      font-size: 1em;
     }
 }
 
-@media(min-width: 426px){
+@media(min-width: 600px){
+    header{
+      padding-left: 6em;
+    }
+
+    .logo{
+      margin-top: 14px;}
+
     .hamburger{
         display: none;
     }
@@ -278,6 +295,92 @@ ul{
     }
 
     .circle{
-      width: 15%;
+      width: 150px;
+      display: inline-block;
     }
+    
+    section#aboutme ul.inline {
+      display: block;
+      float: left;
+      padding-left: 8em;}
+
+    .tech{
+      text-align: left;
+    }
+
+    .social{
+      width: 100px;
+    }
+
+    #aboutme ul.first{
+      padding-left: 8em;
+      padding-right: 8em;
+    }
+
+    #aboutme .second{
+      padding-left: 10px;
+      margin-left: 15px;
+    }
+
+    #contact div{
+      margin-left: 8em;
+    } 
+
+  }
+
+@media(min-width: 767px){
+  #contact div{
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+  section#portfolio{
+    padding-bottom: 15em;
+  }
+
+}
+
+
+@media(min-width: 980px){
+
+.pfimg{
+  width: 25%;
+}
+
+.circle{
+  margin-right: 150px;
+}
+
+#contact div{
+  margin-left: 12em;
+}  
+
+header{
+  padding-bottom: 32em;
+}
+
+section#aboutme {
+  padding-bottom: 30em;
+}
+
+}
+@media(min-width: 1024px){
+
+  section#portfolio{
+    padding-bottom: 30em;
+  }
+
+  #contact div{
+    margin-left: 12em;
+    margin-right: 8em;
+  } 
+
+  #contact{
+    padding-top: 13em;
+  }
+}
+
+@media(min-width: 1080px){
+  .circle{
+    margin-right: 250px;
+  }
 }

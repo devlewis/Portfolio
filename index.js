@@ -27,7 +27,7 @@ $(".tocontact").on("click", function(event){
 })
 
 $(".logo").on("click", function(event){
-    var elmnt=document.getElementById("banner");
+    var elmnt=document.getElementById("image");
     elmnt.scrollIntoView();
 })
 
