@@ -134,6 +134,7 @@ button:hover {
 
 .pfimg {
   width: 65%;
+  margin-bottom: 2em;
 }
 
 .tech {
@@ -213,6 +214,7 @@ ul {
 }
 
 #contact {
+  margin-top: 2em;
   padding-top: 6em;
   padding-bottom: 3em;
 }
@@ -261,7 +263,9 @@ footer {
   }
   header {
     padding-left: 6em;
+    margin-bottom: 9em;
   }
+
   .logo {
     margin-top: 5px;
     font-size: 24px;
@@ -312,9 +316,9 @@ footer {
     margin-left: 5em;
     margin-right: 5em;
   }
-  /* section#portfolio {
-    padding-bottom: 15em;
-  } */
+  section#portfolio {
+    padding-bottom: 10em;
+  } 
 }
 
 @media(min-width: 980px) {
@@ -327,25 +331,18 @@ footer {
   #contact div {
     margin-left: 12em;
   }
-  header {
-    padding-bottom: 10em;
-  }
-  /* section#aboutme {
-    padding-bottom: 30em;
-  } */
+
 }
 
 @media(min-width: 1024px) {
-  /* section#portfolio {
-    padding-bottom: 30em;
-  } */
+
   #contact div {
     margin-left: 12em;
     margin-right: 8em;
   }
-  #contact {
+  /* #contact {
     padding-top: 13em;
-  }
+  } */
 }
 
 @media(min-width: 1080px) {
