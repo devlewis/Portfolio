@@ -27,6 +27,6 @@ $(".tocontact").on("click", function(event) {
 });
 
 $(".logo").on("click", function(event) {
-  var elmnt = document.getElementById("image");
+  var elmnt = document.getElementById("cloud");
   elmnt.scrollIntoView();
 });

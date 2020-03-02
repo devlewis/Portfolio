@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <img id="image" class="image" src="images/pinkclouds.5.png" alt="pink clouds">
     <nav>
         <div class="logo">DL</div>
         <div class="hamburger" onclick="toggleClass()">&#9776;</div>
@@ -22,8 +21,9 @@
             <li onclick="toggleClass()"><a href="https://github.com/devlewis" target="_Blank">Github</a></li>
         </ul>
     </nav>
-    <main>
 
+    <main>
+        <img id="cloud" class="image" src="images/pinkclouds.5.png" alt="pink clouds">
         <header id="banner">
             <h1>Hi, I'm Devree; <span class='small'>(rhymes with 'every');</span></h1>
             <h1>I'm a full stack developer.</h1>
@@ -64,46 +64,53 @@
             <br><br>
             <h2>PROJECTS</h2>
             <div class= "pdiv">
-            <img class="pfimg" src="images/IMG_1855.png" alt="European Capitals Quiz mobile screenshot">
-            <h3 class="left">Quiz app: European Capitals</h3>
+                <div class= "col-left">
+                    <img class="pfimg" src="images/IMG_1855.png" alt="European Capitals Quiz mobile screenshot">
+                </div>
+                <div class= "col-right">
+                    <h3 class="left">Quiz app: European Capitals</h3>
 
-            <p class="left">This quiz tests knowledge of and educates the user on lesser-known European capital
-                cities.<br><br>
-                Inspired by my own lack of knowledge of these lesser-known European capital cities.</p>
+                    <p class="left">This quiz tests knowledge of and educates the user on lesser-known European capital
+                        cities.<br><br>
+                        Inspired by my own lack of knowledge of these lesser-known European capital cities.</p>
 
-            <ul class="tech">
-                <li class="litech"><img src="images/htmlicon.png" alt="html icon"></li>
-                <li class="litech"><img src="images/cssicon.png" alt="css icon"></li>
-                <li class="litech"><img src="images/jsicon.png" alt="javascript icon"></li>
-            </ul>
+                    <ul class="tech">
+                        <li class="litech"><img src="images/htmlicon.png" alt="html icon"></li>
+                        <li class="litech"><img src="images/cssicon.png" alt="css icon"></li>
+                        <li class="litech"><img src="images/jsicon.png" alt="javascript icon"></li>
+                    </ul>
 
-            <ul class="left sites">
-                <li><a class="hover" href="https://devlewis.github.io/quiz-app-final" target="_Blank">European Capitals
-                        Quiz Live Site</a></li>
-                <li><a class="hover" href="https://github.com/devlewis/quiz-app-final" target="_Blank">European Capitals
-                        Quiz Repo</a></li>
-            </ul>
+                    <ul class="left sites">
+                        <li><a class="hover" href="https://devlewis.github.io/quiz-app-final" target="_Blank">European Capitals
+                                Quiz Live Site</a></li>
+                        <li><a class="hover" href="https://github.com/devlewis/quiz-app-final" target="_Blank">European Capitals
+                                Quiz Repo</a></li>
+                    </ul>
+                </div>
             </div>
             
-            <hr>
 
             <div class= "pdiv">
-            <img class="pfimg" src="images/Good-Morning-In.jpeg" alt="Good Morning In app mobile screenshot">
-            <h3 class="left">API app: Good Morning In...</h3>
-            <p class="left">This app uses GoogleTranslate API, RestCountries API, GoogleMapsGeocoding API, GoogleMapsTimeZone API, and WorldTimeAPI to display several greeting phrases in each country's principal language, the country's capital city, and the capital city's current time.
-                </p> 
+                <div class= "col-left2">
+                    <img class="pfimg2" src="images/GoodMorningInDesktopScreenshot.png" alt="Good Morning In app desktop screenshot 1">
+                    <img class="pfimg2" src="images/GoodMorningInDesktopScreenshot2.png" alt="Good Morning In app desktop screenshot 1">
+                </div>
+                <div class= "col-right2">
+                    <h3 class="left">API app: Good Morning In...</h3>
+                    <p class="left">This app uses GoogleTranslate API, RestCountries API, GoogleMapsGeocoding API, GoogleMapsTimeZone API, and WorldTimeAPI to display several greeting phrases in each country's principal language, the country's capital city, and the capital city's current time.</p> 
 
-            <ul class="tech">
-                <li class="litech"><img src="images/htmlicon.png" alt="html icon"></li>
-                <li class="litech"><img src="images/cssicon.png" alt="css icon"></li>
-                <li class="litech"><img src="images/jsicon.png" alt="javascript icon"></li>
-            </ul>
+                <ul class="tech">
+                    <li class="litech"><img src="images/htmlicon.png" alt="html icon"></li>
+                    <li class="litech"><img src="images/cssicon.png" alt="css icon"></li>
+                    <li class="litech"><img src="images/jsicon.png" alt="javascript icon"></li>
+                </ul>
 
-            <ul class="left sites">
-                <li><a class="hover" href="https://devlewis.github.io/GoodMorningApp/" target="_Blank">Good Morning In... Live Site</a></li>
-                <li><a class="hover" href="https://github.com/devlewis/GoodMorningApp/" target="_Blank">Good Morning In... Repo</a></li>
-            </ul>
-        </div>
+                <ul class="left sites">
+                    <li><a class="hover" href="https://devlewis.github.io/GoodMorningApp/" target="_Blank">Good Morning In... Live Site</a></li>
+                    <li><a class="hover" href="https://github.com/devlewis/GoodMorningApp/" target="_Blank">Good Morning In... Repo</a></li>
+                </ul>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
@@ -120,9 +127,10 @@
                                 Profile</a></li>
                     </ul>
             </div>
+            <img class="imagebottom" src="images/pinkclouds.75.png" alt="pink clouds">
         </section>
     </main>
-    <img class="imagebottom" src="images/pinkclouds.75.png" alt="pink clouds">
+    
     <footer>
         <ul class="socialtech">
             <li class="social"><a href="https://github.com/devlewis" target="_Blank"><img
