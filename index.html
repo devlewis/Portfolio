@@ -1,148 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Devree Lewis Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio for Devree Lewis, new web dev">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio for Devree Lewis, new web dev"
+    />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="logo">DL</div>
-        <div class="hamburger" onclick="toggleClass()">&#9776;</div>
-        <ul class="navbardesktop">
-            <li class="toaboutme">About Me</li>
-            <li class="toportfoliomenu">Portfolio</li>
-            <li class="tocontact">Contact</li>
-            <li onclick="toggleClass()"><a href="https://github.com/devlewis" target="_Blank">Github</a></li>
-        </ul>
+      <div class="logo">DL</div>
+      <div class="hamburger" onclick="toggleClass()">&#9776;</div>
+      <ul class="navbardesktop">
+        <li class="toaboutme">About Me</li>
+        <li class="toportfoliomenu">Portfolio</li>
+        <li class="tocontact">Contact</li>
+        <li onclick="toggleClass()">
+          <a href="https://github.com/devlewis" target="_Blank">Github</a>
+        </li>
+      </ul>
     </nav>
 
     <main>
-        <img id="cloud" class="image" src="images/pinkclouds.5.png" alt="pink clouds">
-        <header id="banner">
-            <h1>Hi, I'm Devree; <span class='small'>(rhymes with 'every');</span></h1>
-            <h1>I'm a full stack developer.</h1>
-            <button class="toportfolio">
-                Portfolio&#8594;
-            </button>
-        </header>
+      <img
+        id="cloud"
+        class="image"
+        src="images/pinkclouds.5.png"
+        alt="pink clouds"
+      />
+      <header id="banner">
+        <h1>
+          Hi, I'm Devree; <span class="small">(rhymes with 'every');</span>
+        </h1>
+        <h1>I'm a full stack developer.</h1>
+        <button class="toportfolio">
+          Portfolio&#8594;
+        </button>
+      </header>
 
-        <section id="aboutme">
-            <br><br>
-            <p>I’m currently enrolled in Thinkful’s Engineering Flex program,<br>
-                where I love to solve problems and learn how to use new tools for creation.</p>
-            <h2>MY FAVORITE THINGS</h2>
-            <ul class="first">
-                <li>JavaScript</li>
-                <li> Learning
-                    <ul class="second">
-                        <li>Programming languages, spoken languages, new recipes, etc. </li>
-                    </ul>
-                </li>
-                <li>Efficient collaboration</li>
-                <li>Good and clear communication
-                    <ul class="second">
-                        <li>Relatedly: well-written stories (ex. Breaking Bad; Hamlet; The Phantom Tollbooth)</li>
-                    </ul>
-                </li>
+      <section id="aboutme">
+        <br /><br />
+        <p>
+          I’m currently enrolled in Thinkful’s Engineering Flex program,<br />
+          where I love to solve problems and learn how to use new tools for
+          creation.
+        </p>
+        <h2>MY FAVORITE THINGS</h2>
+        <ul class="first">
+          <li>JavaScript</li>
+          <li>
+            Learning
+            <ul class="second">
+              <li>
+                Programming languages, spoken languages, new recipes, etc.
+              </li>
             </ul>
-            <h2>WHEN I'M NOT CODING, I'M:</h2>
-            <ul class="inline">
-                <li>A performing cellist, classical and other genres</li>
-                <li>An avid reader</li>
-                <li>A consumer of stories via screen (TV)</li>
+          </li>
+          <li>Efficient collaboration</li>
+          <li>
+            Good and clear communication
+            <ul class="second">
+              <li>
+                Relatedly: well-written stories (ex. Breaking Bad; Hamlet; The
+                Phantom Tollbooth)
+              </li>
             </ul>
-            <img class="circle" src="images/IMG_2641 smaller.jpeg" alt="Devree Lewis headshot">
-        </section>
-
-        <section id="portfolio">
-            <br><br>
-            <h2>PROJECTS</h2>
-            <div class= "pdiv">
-                <div class= "col-left">
-                    <img class="pfimg" src="images/IMG_1855.png" alt="European Capitals Quiz mobile screenshot">
-                </div>
-                <div class= "col-right">
-                    <h3 class="left">Quiz app: European Capitals</h3>
-
-                    <p class="left">This quiz tests knowledge of and educates the user on lesser-known European capital
-                        cities.<br><br>
-                        Inspired by my own lack of knowledge of these lesser-known European capital cities.</p>
-
-                    <ul class="tech">
-                        <li class="litech"><img src="images/htmlicon.png" alt="html icon"></li>
-                        <li class="litech"><img src="images/cssicon.png" alt="css icon"></li>
-                        <li class="litech"><img src="images/jsicon.png" alt="javascript icon"></li>
-                    </ul>
-
-                    <ul class="left sites">
-                        <li><a class="hover" href="https://devlewis.github.io/quiz-app-final" target="_Blank">European Capitals
-                                Quiz Live Site</a></li>
-                        <li><a class="hover" href="https://github.com/devlewis/quiz-app-final" target="_Blank">European Capitals
-                                Quiz Repo</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-
-            <div class= "pdiv">
-                <div class= "col-left2">
-                    <img class="pfimg2" src="images/GoodMorningInDesktopScreenshot.png" alt="Good Morning In app desktop screenshot 1">
-                    <img class="pfimg2" src="images/GoodMorningInDesktopScreenshot2.png" alt="Good Morning In app desktop screenshot 2">
-                </div>
-                <div class= "col-right2">
-                    <h3 class="left">API app: Good Morning In...</h3>
-                    <p class="left">This app uses GoogleTranslate API, RestCountries API, GoogleMapsGeocoding API, GoogleMapsTimeZone API, and WorldTimeAPI to display several greeting phrases in each country's principal language, the country's capital city, and the capital city's current time.</p> 
-
-                <ul class="tech">
-                    <li class="litech"><img src="images/htmlicon.png" alt="html icon"></li>
-                    <li class="litech"><img src="images/cssicon.png" alt="css icon"></li>
-                    <li class="litech"><img src="images/jsicon.png" alt="javascript icon"></li>
-                </ul>
-
-                <ul class="left sites">
-                    <li><a class="hover" href="https://devlewis.github.io/GoodMorningApp/" target="_Blank">Good Morning In... Live Site</a></li>
-                    <li><a class="hover" href="https://github.com/devlewis/GoodMorningApp/" target="_Blank">Good Morning In... Repo</a></li>
-                </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>CONTACT ME</h2>
-            <div>
-                <p>Who:<br>Devree Lewis, developer</p>
-                <p>Where:<br>Washington, D.C. Metro Area
-                    <br>
-                    <ul>
-                        <li><a class="hover" href="mailto:devree.lewis@gmail.com" target="_Blank">Email Me:</a><span>
-                                devree.lewis@gmail.com</span></li>
-                        <li><a class="hover" href="https://github.com/devlewis" target="_Blank">GitHub Profile</a></li>
-                        <li><a class="hover" href="https://www.linkedin.com/in/devreelewis/" target="_Blank">Linked In
-                                Profile</a></li>
-                    </ul>
-            </div>
-            <img class="imagebottom" src="images/pinkclouds.75.png" alt="pink clouds">
-        </section>
-    </main>
-    
-    <footer>
-        <ul class="socialtech">
-            <li class="social"><a href="https://github.com/devlewis" target="_Blank"><img
-                        src="images/iconfinder_social_media_logo_github_1221585.png" alt="github logo"></a></li>
-            <li class="social"><a href="https://www.linkedin.com/in/devreelewis/" target="_Blank"><img
-                        src="images/LI-In-Bug1.36.11PM.png" alt="linkedin logo"></a></li>
-            <li class="social"><a href="https://soundcloud.com/devree-lewis-cello" target="_Blank"><img
-                        src="images/iconfinder_32_soundcloud_353477.png" alt="soundcould logo"></a></li>
+          </li>
         </ul>
+        <h2>WHEN I'M NOT CODING, I'M:</h2>
+        <ul class="inline">
+          <li>A performing cellist, classical and other genres</li>
+          <li>An avid reader</li>
+          <li>A consumer of stories via screen (TV)</li>
+        </ul>
+        <img
+          class="circle"
+          src="images/IMG_2641 smaller.jpeg"
+          alt="Devree Lewis headshot"
+        />
+      </section>
+
+      <section id="portfolio">
+        <br /><br />
+        <h2>PROJECTS</h2>
+        <!-- <div class="pdiv">
+          <div class="col-left">
+            <img
+              class="pfimg"
+              src="images/IMG_1855.png"
+              alt="European Capitals Quiz mobile screenshot"
+            />
+          </div>
+          <div class="col-right">
+            <h3 class="left">Quiz app: European Capitals</h3>
+
+            <p class="left">
+              This quiz tests knowledge of and educates the user on lesser-known
+              European capital cities.<br /><br />
+              Inspired by my own lack of knowledge of these lesser-known
+              European capital cities.
+            </p>
+
+            <ul class="tech">
+              <li class="litech">
+                <img src="images/htmlicon.png" alt="html icon" />
+              </li>
+              <li class="litech">
+                <img src="images/cssicon.png" alt="css icon" />
+              </li>
+              <li class="litech">
+                <img src="images/jsicon.png" alt="javascript icon" />
+              </li>
+            </ul>
+
+            <ul class="left sites">
+              <li>
+                <a
+                  class="hover"
+                  href="https://devlewis.github.io/quiz-app-final"
+                  target="_Blank"
+                  >European Capitals Quiz Live Site</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover"
+                  href="https://github.com/devlewis/quiz-app-final"
+                  target="_Blank"
+                  >European Capitals Quiz Repo</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="pdiv">
+          <div class="col-left2">
+            <img
+              class="pfimg2"
+              src="images/GoodMorningInDesktopScreenshot.png"
+              alt="Good Morning In app desktop screenshot 1"
+            />
+            <img
+              class="pfimg2"
+              src="images/GoodMorningInDesktopScreenshot2.png"
+              alt="Good Morning In app desktop screenshot 2"
+            />
+          </div>
+          <div class="col-right2">
+            <a
+              class="hover lefta siteheader"
+              href="https://devlewis.github.io/GoodMorningApp/"
+              target="_Blank"
+              >Good Morning In...</a
+            >
+            <p class="left">
+              This app uses GoogleTranslate API, RestCountries API,
+              GoogleMapsGeocoding API, GoogleMapsTimeZone API, and WorldTimeAPI
+              to display several greeting phrases in each country's principal
+              language, the country's capital city, and the capital city's
+              current time.
+            </p>
+
+            <ul class="tech">
+              <li class="litech">
+                <img src="images/htmlicon.png" alt="html icon" />
+              </li>
+              <li class="litech">
+                <img src="images/cssicon.png" alt="css icon" />
+              </li>
+              <li class="litech">
+                <img src="images/jsicon.png" alt="javascript icon" />
+              </li>
+            </ul>
+
+            <a
+              class="hover left sites"
+              href="https://github.com/devlewis/GoodMorningApp/"
+              target="_Blank"
+              >Good Morning In... Repo</a
+            >
+          </div>
+        </div>
+
+        <div class="pdiv">
+          <div class="col-left">
+            <img
+              class="pfimg"
+              src="images/PrLogScreenShot1.jpg"
+              alt="PrLog Mobile screenshot 1"
+            />
+            <!-- <img
+              class="pfimg"
+              src="images/PrLogScreenShot2.jpg"
+              alt="PrLog Mobile screenshot 2"
+            /> -->
+          </div>
+          <div class="col-right">
+            <a
+              class="hover lefta siteheader"
+              href="https://practice-log-app.devreelewis.now.sh/"
+              target="_Blank"
+              >Practice Log App Live Site</a
+            >
+            <p class="left">
+              This app is for logging hours and basic details for your daily
+              practice. Users may choose goal lengths of 7, 30, or 100
+              consecutive days of practice, choose a daily number of hours goal,
+              and log/edit their hours and practice notes accordingly.
+            </p>
+            <ul class="tech">
+              <li class="litech">
+                <img src="images/htmlicon.png" alt="html icon" />
+              </li>
+              <li class="litech">
+                <img src="images/cssicon.png" alt="css icon" />
+              </li>
+              <li class="litech">
+                <img src="images/nodeiconsmall.png" alt="node icon" />
+              </li>
+              <li class="litech">
+                <img src="images/ReactLogosmall.png" alt="react icon" />
+              </li>
+            </ul>
+            <a
+              class="hover"
+              href="https://github.com/devlewis/practice-log-client"
+              target="_Blank"
+              >Practice Log App Repo</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>CONTACT ME</h2>
+        <div>
+          <p>Who:<br />Devree Lewis, developer</p>
+          <p>Where:<br />Washington, D.C. Metro Area <br /></p>
+
+          <ul>
+            <li>
+              <a
+                class="hover"
+                href="mailto:devree.lewis@gmail.com"
+                target="_Blank"
+                >Email Me:</a
+              ><span> devree.lewis@gmail.com</span>
+            </li>
+            <li>
+              <a
+                class="hover"
+                href="https://github.com/devlewis"
+                target="_Blank"
+                >GitHub Profile</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover"
+                href="https://www.linkedin.com/in/devreelewis/"
+                target="_Blank"
+                >Linked In Profile</a
+              >
+            </li>
+          </ul>
+        </div>
+        <img
+          class="imagebottom"
+          src="images/pinkclouds.75.png"
+          alt="pink clouds"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <ul class="socialtech">
+        <li class="social">
+          <a href="https://github.com/devlewis" target="_Blank"
+            ><img
+              src="images/iconfinder_social_media_logo_github_1221585.png"
+              alt="github logo"
+          /></a>
+        </li>
+        <li class="social">
+          <a href="https://www.linkedin.com/in/devreelewis/" target="_Blank"
+            ><img src="images/LinkedInicon.png" alt="linkedin logo"
+          /></a>
+        </li>
+        <li class="social">
+          <a href="https://soundcloud.com/devree-lewis-cello" target="_Blank"
+            ><img
+              src="images/iconfinder_32_soundcloud_353477.png"
+              alt="soundcloud logo"
+          /></a>
+        </li>
+      </ul>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
