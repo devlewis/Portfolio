@@ -177,9 +177,11 @@ button:hover {
   display: inline;
   margin-left: 0.5em;
 }
+
 .litech:first-child {
   margin-left: 0;
 }
+
 .sites.left {
   padding-left: 0;
   margin-left: 0;
@@ -213,7 +215,7 @@ a.hover:visited {
   border-radius: 1%;
   background-color: rgb(22, 52, 150);
   margin-bottom: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .social {
