@@ -160,8 +160,8 @@ button:hover {
 
 .pfimg {
   margin-top: 10px;
-  width: 100px;
-  height: 185px;
+  width: 120px;
+  height: 246px;
 }
 
 .pfimg2 {
@@ -211,6 +211,10 @@ button:hover {
 
 #portfolio a:visited {
   color: rgb(240, 97, 204);
+}
+
+.hover:first-child {
+  margin-bottom: 15px;
 }
 
 a.hover:visited {
@@ -275,7 +279,18 @@ footer {
   padding: 1% 0;
 }
 
+.sitesbox {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media (min-width: 600px) {
+  .sitesbox {
+    flex-direction: column;
+    /* justify-content: space-between; */
+    text-align: left;
+  }
+
   .logo:hover {
     color: rgb(255, 228, 254);
     cursor: pointer;
@@ -349,8 +364,7 @@ footer {
   }
 
   .pfimg {
-    padding: 0px 10px 10px 10px;
-    margin-top: 10px;
+    margin-left: 5px;
   }
 
   .pdiv {
@@ -391,14 +405,14 @@ footer {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 800px) {
   .siteheader {
     font-size: 1.6em;
   }
 
   .pfimg {
     width: 160px;
-    height: 300px;
+    height: 340px;
   }
   #contact div {
     margin-left: 5em;
@@ -414,8 +428,8 @@ footer {
     margin-left: 12em;
   }
   .pfimg {
-    width: 50%;
-    height: 90%;
+    width: 200px;
+    height: 410px;
   }
 }
 
