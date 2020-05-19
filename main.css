@@ -281,13 +281,12 @@ footer {
 
 .sitesbox {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
 }
 
 @media (min-width: 600px) {
   .sitesbox {
-    flex-direction: column;
-    /* justify-content: space-between; */
     text-align: left;
   }
 
