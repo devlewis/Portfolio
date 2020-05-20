@@ -295,6 +295,10 @@ footer {
 }
 
 @media (min-width: 600px) {
+  .litech img {
+    width: 1.75em;
+  }
+
   .sitesbox {
     text-align: left;
   }
@@ -386,6 +390,8 @@ footer {
 
   .left {
     text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .circle {
     width: 150px;
@@ -418,6 +424,10 @@ footer {
 @media (min-width: 800px) {
   .siteheader {
     font-size: 1.6em;
+  }
+
+  .litech img {
+    width: 2.5em;
   }
 
   .pfimg {
