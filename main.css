@@ -431,8 +431,8 @@ footer {
   }
 
   .pfimg {
-    width: 160px;
-    height: 340px;
+    width: 140px;
+    height: 290px;
   }
   #contact div {
     margin-left: 5em;
@@ -447,9 +447,10 @@ footer {
   #contact div {
     margin-left: 12em;
   }
+
   .pfimg {
-    width: 200px;
-    height: 410px;
+    width: 180px;
+    height: 380px;
   }
 }
 
