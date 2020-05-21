@@ -100,7 +100,7 @@ header {
 }
 
 .small {
-  animation: cssAnimation 0s 1s forwards;
+  animation: cssAnimation 0s 2s forwards;
   visibility: hidden;
 }
 
