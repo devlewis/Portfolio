@@ -99,6 +99,17 @@ header {
   padding-right: 6%;
 }
 
+.small {
+  animation: cssAnimation 0s 1s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to {
+    visibility: visible;
+  }
+}
+
 section {
   padding: 3%;
   padding-top: 80px;
