@@ -100,7 +100,7 @@ header {
 }
 
 .small {
-  animation: cssAnimation 0s 4s forwards;
+  animation: cssAnimation 0s 3s forwards;
   visibility: hidden;
 }
 
@@ -250,7 +250,7 @@ a.hover:visited {
   border-radius: 1%;
   background-color: rgb(22, 52, 150);
   margin-bottom: 40px;
-  padding-bottom: 20px;
+  padding: 20px;
   box-shadow: 0 2.8px 2.2px rgba(000, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
@@ -308,6 +308,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 600px) {
@@ -316,14 +317,6 @@ footer {
   }
 
   #aboutme p {
-    text-align: left;
-  }
-
-  .litech img {
-    width: 1.75em;
-  }
-
-  .sitesbox {
     text-align: left;
   }
 
@@ -375,6 +368,62 @@ footer {
     display: none;
   }
 
+  .circle {
+    width: 250px;
+  }
+  section#aboutme ul.inline {
+    display: block;
+    float: left;
+    padding-left: 3em;
+  }
+
+  .social {
+    width: 100px;
+  }
+  #aboutme ul.first,
+  #aboutme p {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  #aboutme .second {
+    padding-left: 10px;
+    margin-left: 15px;
+  }
+  #contact div {
+    margin-left: 8em;
+  }
+}
+
+@media (min-width: 800px) {
+  .litech img {
+    width: 1.75em;
+  }
+
+  .tech {
+    text-align: left;
+  }
+
+  .sitesbox {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  .pfimg {
+    margin-left: 5px;
+  }
+
+  .pdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 75px;
+  }
+  .left {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .col-left {
     margin-bottom: none;
     width: 45%;
@@ -401,52 +450,6 @@ footer {
     align-items: flex-start;
   }
 
-  .pfimg {
-    margin-left: 5px;
-  }
-
-  .pdiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 75px;
-  }
-
-  .left {
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .circle {
-    width: 250px;
-  }
-  section#aboutme ul.inline {
-    display: block;
-    float: left;
-    padding-left: 3em;
-  }
-  .tech {
-    text-align: left;
-  }
-  .social {
-    width: 100px;
-  }
-  #aboutme ul.first,
-  #aboutme p {
-    padding-left: 3em;
-    padding-right: 3em;
-  }
-
-  #aboutme .second {
-    padding-left: 10px;
-    margin-left: 15px;
-  }
-  #contact div {
-    margin-left: 8em;
-  }
-}
-
-@media (min-width: 800px) {
   #aboutme ul.first,
   #aboutme p {
     margin-left: 100px;
