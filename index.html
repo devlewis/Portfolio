@@ -1,359 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Devree Lewis Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Portfolio for Devree Lewis, full-stack dev"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"
-    />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
 
-  <body>
-    <nav>
-      <div class="logo">DL</div>
-      <div class="hamburger" onclick="toggleClass()">&#9776;</div>
-      <ul class="navbardesktop">
-        <li class="toaboutme">About Me</li>
-        <li class="toportfoliomenu">Portfolio</li>
-        <li class="tocontact">Contact</li>
-        <li onclick="toggleClass()">
-          <a href="https://github.com/devlewis" target="_Blank">Github</a>
-        </li>
-      </ul>
-    </nav>
+<head>
+  <title>Devree Lewis Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio for Devree Lewis, full-stack dev" />
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
 
-    <main>
-      <img
-        id="cloud"
-        class="image"
-        src="images/pinkclouds.5.png"
-        alt="pink clouds"
-      />
-      <header id="banner">
-        <h1>
-          Hi, I'm Devree; <span class="small">(rhymes with 'every');</span>
-        </h1>
-        <h1>I'm a full stack developer.</h1>
-        <button class="toportfolio">
-          Portfolio&#8594;
-        </button>
-      </header>
+<body>
+  <nav>
+    <div class="logo">DL</div>
+    <div class="hamburger" onclick="toggleClass()">&#9776;</div>
+    <ul class="navbardesktop">
+      <li class="toaboutme">About Me</li>
+      <li class="toportfoliomenu">Portfolio</li>
+      <li class="tocontact">Contact</li>
+      <li onclick="toggleClass()">
+        <a href="https://github.com/devlewis" target="_Blank">Github</a>
+      </li>
+    </ul>
+  </nav>
 
-      <section id="aboutme">
-        <br /><br />
-        <p>
-          I’m currently enrolled in Thinkful’s Engineering Flex program,<br />
-          where I love to solve problems and learn how to use new tools for
-          creation.
-        </p>
-        <h2>MY FAVORITE THINGS</h2>
-        <ul class="first">
-          <li>JavaScript</li>
-          <li>
-            Learning
-            <ul class="second">
-              <li>
-                Programming languages, spoken languages, new recipes, etc.
-              </li>
-            </ul>
-          </li>
-          <li>Efficient collaboration</li>
-          <li>
-            Good and clear communication
-            <ul class="second">
-              <li>
-                Relatedly: well-written stories (ex. Breaking Bad; Hamlet; The
-                Phantom Tollbooth)
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <h2>WHEN I'M NOT CODING, I'M:</h2>
-        <ul class="inline">
-          <li>A performing cellist, classical and other genres</li>
-          <li>An avid reader</li>
-          <li>A consumer of stories via screen (TV)</li>
-        </ul>
-        <img
-          class="circle"
-          src="images/IMG_2641 smaller.jpeg"
-          alt="Devree Lewis headshot"
-        />
-      </section>
+  <main>
+    <img id="cloud" class="image" src="images/pinkclouds.5.png" alt="pink clouds" />
+    <header id="banner">
+      <h1>
+        Hi, I'm Devree; <span class="small">(rhymes with 'every');</span>
+      </h1>
+      <h1>I'm a full stack developer.</h1>
+      <button class="toportfolio">
+        Portfolio&#8594;
+      </button>
+    </header>
 
-      <section id="portfolio">
-        <br /><br />
-        <h2>PROJECTS</h2>
-        <div class="pdiv">
-          <div class="col-left2">
-            <img
-              class="pfimg2"
-              src="images/GoodMorningInDesktopScreenshot.png"
-              alt="Good Morning In app desktop screenshot 1"
-            />
-            <img
-              class="pfimg2"
-              src="images/GoodMorningInDesktopScreenshot2.png"
-              alt="Good Morning In app desktop screenshot 2"
-            />
-          </div>
-          <div class="col-right2">
-            <a
-              class="hover lefta siteheader"
-              href="https://devlewis.github.io/GoodMorningApp/"
-              target="_Blank"
-              >Good Morning In...</a
-            >
-            <p class="left">
-              This app uses GoogleTranslate API, RestCountries API,
-              GoogleMapsGeocoding API, GoogleMapsTimeZone API, and WorldTimeAPI
-              to display several greeting phrases in each country's principal
-              language, the country's capital city, and the capital city's
-              current time.
-            </p>
-
-            <ul class="tech">
-              <li class="litech">
-                <img src="images/htmlicon.png" alt="html icon" />
-              </li>
-              <li class="litech">
-                <img src="images/cssicon.png" alt="css icon" />
-              </li>
-              <li class="litech">
-                <img src="images/jsiconsmall.png" alt="js icon" />
-              </li>
-              <li class="litech">
-                <img src="images/node-icon-real.png" alt="node icon" />
-              </li>
-            </ul>
-            <div class="sitesbox">
-              <a
-                class="hover left sites"
-                href="https://github.com/devlewis/GoodMorningApp/"
-                target="_Blank"
-                >Good Morning In... Client Repo</a
-              >
-              <a
-                class="hover"
-                href="https://github.com/devlewis/good-morning-in-api"
-                target="_Blank"
-                >Good Morning In... API Repo</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="pdiv">
-          <div class="col-left2">
-            <img
-              class="pfimg2"
-              src="images/haikuhome.png"
-              alt="haiku dada screenshot 1"
-            />
-            <img
-              class="pfimg2"
-              src="images/haikucollection.png"
-              alt="haiku dada screenshot 1"
-            />
-          </div>
-          <div class="col-right">
-            <a
-              class="hover lefta siteheader"
-              href="https://haiku-shift-client.now.sh/"
-              target="_Blank"
-              >Haiku Dada App Live Site</a
-            >
-            <p class="left">
-              Haiku Dada is a platform where users can auto-generate new haikus
-              by using a madlibs-style form. Since haikus generally consist of
-              5-syllable, 7-syllable, 5-syllable lines, generator logic controls
-              the syllables and grammar rules for each line. Users can also view
-              the collection of previously created haikus. Finally, users can
-              view a randomly generated haiku - based on the inputs of previous
-              users.
-            </p>
-            <ul class="tech">
-              <li class="litech">
-                <img src="images/htmlicon.png" alt="html icon" />
-              </li>
-              <li class="litech">
-                <img src="images/cssicon.png" alt="css icon" />
-              </li>
-              <li class="litech">
-                <img src="images/jsiconsmall.png" alt="js icon" />
-              </li>
-              <li class="litech">
-                <img src="images/ReactLogosmall.png" alt="react icon" />
-              </li>
-              <li class="litech">
-                <img src="images/node-icon-real.png" alt="node icon" />
-              </li>
-              <li class="litech">
-                <img src="images/postgresicon.png" alt="pg icon" />
-              </li>
-            </ul>
-            <div class="sitesbox">
-              <a
-                class="hover"
-                href="https://github.com/devlewis/haiku-shift-client"
-                target="_Blank"
-                >Haiku Dada Client Repo</a
-              >
-              <a
-                class="hover"
-                href="https://github.com/devlewis/haiku-shift-api"
-                target="_Blank"
-                >Haiku Dada API Repo</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="pdiv">
-          <div class="col-left">
-            <img
-              class="pfimg"
-              src="images/PrLogScreenShot1.jpg"
-              alt="PrLog Mobile screenshot 1"
-            />
-            <img
-              class="pfimg"
-              src="images/PrLogScreenShot2.jpg"
-              alt="PrLog Mobile screenshot 1"
-            />
-          </div>
-          <div class="col-right">
-            <a
-              class="hover lefta siteheader"
-              href="https://practice-log-app.devreelewis.now.sh/"
-              target="_Blank"
-              >Practice Log App Live Site</a
-            >
-            <p class="left">
-              This app is for logging hours and basic details for your daily
-              practice. Users may choose goal lengths of 7, 30, or 100
-              consecutive days of practice, choose a daily number of hours goal,
-              and log/edit their hours and practice notes accordingly.
-            </p>
-            <ul class="tech">
-              <li class="litech">
-                <img src="images/htmlicon.png" alt="html icon" />
-              </li>
-              <li class="litech">
-                <img src="images/cssicon.png" alt="css icon" />
-              </li>
-              <li class="litech">
-                <img src="images/jsiconsmall.png" alt="js icon" />
-              </li>
-              <li class="litech">
-                <img src="images/ReactLogosmall.png" alt="react icon" />
-              </li>
-              <li class="litech">
-                <img src="images/node-icon-real.png" alt="node icon" />
-              </li>
-              <li class="litech">
-                <img src="images/postgresicon.png" alt="pg icon" />
-              </li>
-            </ul>
-            <div class="sitesbox">
-              <a
-                class="hover"
-                href="https://github.com/devlewis/practice-log-client"
-                target="_Blank"
-                >Practice Log App Client Repo</a
-              >
-              <a
-                class="hover"
-                href="https://github.com/devlewis/practicelog-api"
-                target="_Blank"
-                >Practice Log App API Repo</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>CONTACT ME</h2>
-        <div>
-          <p>Who:<br />Devree Lewis, developer</p>
-          <p>Where:<br />Washington, D.C. Metro Area <br /></p>
-
-          <ul>
+    <section id="aboutme">
+      <p>
+        I'm a full stack developer who wants to work on ambitious projects and
+        contribute to a great team. I love getting deep into React and keeping a
+        well-organized src file. I'm currently working on freelance assignments,
+        my cooking skills, and cello practice.
+      </p>
+      <h2>MY FAVORITE THINGS</h2>
+      <ul class="first">
+        <li>JavaScript, React, Express</li>
+        <li>
+          Learning
+          <ul class="second">
             <li>
-              <a
-                class="hover"
-                href="mailto:devree.lewis@gmail.com"
-                target="_Blank"
-                >Email Me:</a
-              ><span> devree.lewis@gmail.com</span>
-            </li>
-            <li>
-              <a
-                class="hover"
-                href="https://github.com/devlewis"
-                target="_Blank"
-                >GitHub Profile</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover"
-                href="https://www.linkedin.com/in/devreelewis/"
-                target="_Blank"
-                >Linked In Profile</a
-              >
+              Programming languages, spoken languages, new recipes, etc.
             </li>
           </ul>
-        </div>
-        <img
-          class="imagebottom"
-          src="images/pinkclouds.75.png"
-          alt="pink clouds"
-        />
-      </section>
-    </main>
-
-    <footer>
-      <ul class="socialtech">
-        <li class="social">
-          <a href="https://github.com/devlewis" target="_Blank"
-            ><img
-              src="images/iconfinder_social_media_logo_github_1221585.png"
-              alt="github logo"
-          /></a>
         </li>
-        <li class="social">
-          <a href="https://www.linkedin.com/in/devreelewis/" target="_Blank"
-            ><img src="images/LinkedInicon.png" alt="linkedin logo"
-          /></a>
-        </li>
-        <li class="social">
-          <a href="https://soundcloud.com/devree-lewis-cello" target="_Blank"
-            ><img
-              src="images/iconfinder_32_soundcloud_353477.png"
-              alt="soundcloud logo"
-          /></a>
+        <li>Efficient collaboration</li>
+        <li>
+          Clear communication
+          <ul class="second">
+            <li>
+              Relatedly: well-written stories (ex. Breaking Bad; Hamlet; The
+              Phantom Tollbooth)
+            </li>
+          </ul>
         </li>
       </ul>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="index.js"></script>
-  </body>
+      <h2>WHEN I'M NOT CODING, I'M:</h2>
+      <ul class="inline">
+        <li>A performing cellist, classical and other genres</li>
+        <li>An avid reader</li>
+        <li>A consumer of stories via screen (TV)</li>
+      </ul>
+      <img class="circle" src="images/IMG_2641 smaller.jpeg" alt="Devree Lewis headshot" />
+    </section>
+    <section id="portfolio">
+      <h2>PROJECTS</h2>
+      <div class="pdiv">
+        <div class="col-left2">
+          <img class="pfimg2" src="images/GoodMorningInDesktopScreenshot.png"
+            alt="Good Morning In app desktop screenshot 1" />
+          <img class="pfimg2" src="images/GoodMorningInDesktopScreenshot2.png"
+            alt="Good Morning In app desktop screenshot 2" />
+        </div>
+        <div class="col-right2">
+          <a class="hover lefta siteheader" href="https://devlewis.github.io/GoodMorningApp/" target="_Blank">Good
+            Morning In...</a>
+          <p class="left">
+            Input your name and the country you would like to wake up in, and
+            see several phrases in that country's principal language as well
+            as the local time of its capital city. This app uses
+            GoogleTranslate API, RestCountries API, GoogleMapsGeocoding API,
+            GoogleMapsTimeZone API, and WorldTimeAPI.
+          </p>
+          <ul class="tech">
+            <li class="litech">
+              <img src="images/htmlicon.png" alt="html icon" />
+            </li>
+            <li class="litech">
+              <img src="images/cssicon.png" alt="css icon" />
+            </li>
+            <li class="litech">
+              <img src="images/jsiconsmall.png" alt="js icon" />
+            </li>
+            <li class="litech">
+              <img src="images/node-icon-real.png" alt="node icon" />
+            </li>
+          </ul>
+          <div class="sitesbox">
+            <a class="hover left sites" href="https://github.com/devlewis/GoodMorningApp/" target="_Blank">Good Morning
+              In... Client Repo</a>
+            <a class="hover" href="https://github.com/devlewis/good-morning-in-api" target="_Blank">Good Morning In...
+              API Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="pdiv">
+        <div class="col-left2">
+          <img class="pfimg2" src="images/haikuhome.png" alt="haiku dada screenshot 1" />
+          <img class="pfimg2" src="images/haikucollection.png" alt="haiku dada screenshot 1" />
+        </div>
+        <div class="col-right">
+          <a class="hover lefta siteheader" href="https://haiku-shift-client.now.sh/" target="_Blank">Haiku Dada App
+            Live Site</a>
+          <p class="left">
+            Haiku Dada is a platform for auto-generating new haikus, by using
+            a mad-libs-style form. Since haikus generally consist of
+            5-syllable, 7-syllable, 5-syllable lines, generator logic controls
+            the syllables and grammar rules for each line. Site visitors can
+            also view the collection of previously created haikus. Finally,
+            visitors can view a randomly generated haiku - based on the inputs
+            of previous users.
+          </p>
+          <ul class="tech">
+            <li class="litech">
+              <img src="images/htmlicon.png" alt="html icon" />
+            </li>
+            <li class="litech">
+              <img src="images/cssicon.png" alt="css icon" />
+            </li>
+            <li class="litech">
+              <img src="images/jsiconsmall.png" alt="js icon" />
+            </li>
+            <li class="litech">
+              <img src="images/ReactLogosmall.png" alt="react icon" />
+            </li>
+            <li class="litech">
+              <img src="images/node-icon-real.png" alt="node icon" />
+            </li>
+            <li class="litech">
+              <img src="images/postgresicon.png" alt="pg icon" />
+            </li>
+          </ul>
+          <div class="sitesbox">
+            <a class="hover" href="https://github.com/devlewis/haiku-shift-client" target="_Blank">Haiku Dada Client
+              Repo</a>
+            <a class="hover" href="https://github.com/devlewis/haiku-shift-api" target="_Blank">Haiku Dada API Repo</a>
+          </div>
+        </div>
+      </div>
+      <div class="pdiv">
+        <div class="col-left">
+          <img class="pfimg" src="images/PrLogScreenShot1.jpg" alt="PrLog Mobile screenshot 1" />
+          <img class="pfimg" src="images/PrLogScreenShot2.jpg" alt="PrLog Mobile screenshot 2" />
+        </div>
+        <div class="col-right">
+          <a class="hover lefta siteheader" href="https://practice-log-app.devreelewis.now.sh/" target="_Blank">Practice
+            Log App Live Site</a>
+          <p class="left">
+            This app is for logging hours and basic details for your daily
+            practice. Visitors may choose goal lengths of 7, 30, or 100
+            consecutive days of practice, choose a daily number of hours goal,
+            and log/edit their hours and practice notes accordingly.
+          </p>
+          <ul class="tech">
+            <li class="litech">
+              <img src="images/htmlicon.png" alt="html icon" />
+            </li>
+            <li class="litech">
+              <img src="images/cssicon.png" alt="css icon" />
+            </li>
+            <li class="litech">
+              <img src="images/jsiconsmall.png" alt="js icon" />
+            </li>
+            <li class="litech">
+              <img src="images/ReactLogosmall.png" alt="react icon" />
+            </li>
+            <li class="litech">
+              <img src="images/node-icon-real.png" alt="node icon" />
+            </li>
+            <li class="litech">
+              <img src="images/postgresicon.png" alt="pg icon" />
+            </li>
+          </ul>
+          <div class="sitesbox">
+            <a class="hover" href="https://github.com/devlewis/practice-log-client" target="_Blank">Practice Log App
+              Client Repo</a>
+            <a class="hover" href="https://github.com/devlewis/practicelog-api" target="_Blank">Practice Log App API
+              Repo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>CONTACT ME</h2>
+      <div>
+        <p>Who:<br />Devree Lewis, developer</p>
+        <p>Where:<br />Washington, D.C. Metro Area <br /></p>
+
+        <ul>
+          <li>
+            <a class="hover" href="mailto:devree.lewis@gmail.com" target="_Blank">Email Me:</a><span>
+              devree.lewis@gmail.com</span>
+          </li>
+          <li>
+            <a class="hover" href="https://github.com/devlewis" target="_Blank">GitHub Profile</a>
+          </li>
+          <li>
+            <a class="hover" href="https://www.linkedin.com/in/devreelewis/" target="_Blank">Linked In Profile</a>
+          </li>
+        </ul>
+      </div>
+      <img class="imagebottom" src="images/pinkclouds.75.png" alt="pink clouds" />
+    </section>
+  </main>
+
+  <footer>
+    <ul class="socialtech">
+      <li class="social">
+        <a href="https://github.com/devlewis" target="_Blank"><img
+            src="images/iconfinder_social_media_logo_github_1221585.png" alt="github logo" /></a>
+      </li>
+      <li class="social">
+        <a href="https://www.linkedin.com/in/devreelewis/" target="_Blank"><img src="images/LinkedInicon.png"
+            alt="linkedin logo" /></a>
+      </li>
+      <li class="social">
+        <a href="https://soundcloud.com/devree-lewis-cello" target="_Blank"><img
+            src="images/iconfinder_32_soundcloud_353477.png" alt="soundcloud logo" /></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

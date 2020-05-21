@@ -15,11 +15,12 @@ main {
 }
 
 header {
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 #aboutme {
-  min-height: 100vh;
+  min-height: 80vh;
+  padding-bottom: 60px;
 }
 
 #cloud {
@@ -32,9 +33,13 @@ header {
   font-size: 1.25em;
 }
 
+.hover:hover {
+  color: rgb(250, 219, 243);
+}
+
 .imagebottom {
   width: 100%;
-  background-color: rgb(255, 249, 252);
+  background-color: rgb(250, 219, 243);
   display: flex;
   align-self: end;
   z-index: -1;
@@ -62,7 +67,7 @@ nav {
 
 .navbardesktop li {
   display: block;
-  color: rgb(240, 97, 204);
+  color: rgb(250, 219, 243);
   text-decoration: none;
   text-align: right;
   list-style: none;
@@ -71,7 +76,7 @@ nav {
 }
 
 .navbardesktop a {
-  color: rgb(240, 97, 204);
+  color: rgb(250, 219, 243);
   text-decoration: none;
   list-style: none;
 }
@@ -81,7 +86,7 @@ nav {
   position: absolute;
   left: 20px;
   margin-top: 12.5px;
-  color: rgb(240, 97, 204);
+  color: rgb(250, 219, 243);
 }
 
 h1 {
@@ -95,13 +100,16 @@ header {
 }
 
 section {
-  min-height: 200px;
-  padding: 6% 3%;
+  padding: 3%;
+  padding-top: 60px;
 }
 
-section:nth-child(odd),
+section:nth-child(odd) {
+  background-color: rgba(240, 97, 204, 0.103);
+}
+
 .imagebottom {
-  background-color: rgb(255, 249, 252);
+  background-color: transparent;
 }
 
 header,
@@ -120,7 +128,7 @@ section#aboutme ul {
 .hamburger {
   font-size: 1.5em;
   line-height: 1.5;
-  color: rgb(240, 97, 204);
+  color: rgb(250, 219, 243);
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 20px;
@@ -132,7 +140,7 @@ section#aboutme ul {
 }
 
 button {
-  background-color: rgb(255, 228, 254);
+  background-color: rgba(240, 97, 204, 0.199);
   border: solid rgb(22, 52, 150);
   color: rgb(22, 52, 150);
   font-size: 1.25em;
@@ -146,7 +154,6 @@ button:hover {
 }
 
 #portfolio {
-  margin-bottom: 5em;
   display: flex;
   flex-direction: column;
 }
@@ -266,8 +273,6 @@ ul {
 }
 
 #contact {
-  margin-top: 2em;
-  padding-top: 6em;
   padding-bottom: 0;
 }
 
@@ -295,6 +300,10 @@ footer {
 }
 
 @media (min-width: 600px) {
+  #aboutme p {
+    text-align: left;
+  }
+
   .litech img {
     width: 1.75em;
   }
@@ -304,7 +313,7 @@ footer {
   }
 
   .logo:hover {
-    color: rgb(255, 228, 254);
+    color: rgb(240, 97, 204);
     cursor: pointer;
   }
 
@@ -331,7 +340,7 @@ footer {
   }
   .navbardesktop li:hover,
   .navbardesktop a:hover {
-    color: rgb(255, 228, 254);
+    color: rgb(240, 97, 204);
     cursor: pointer;
   }
   .navbardesktop li:last-child {
@@ -394,13 +403,12 @@ footer {
     margin-bottom: 0;
   }
   .circle {
-    width: 150px;
-    display: inline-block;
+    width: 250px;
   }
   section#aboutme ul.inline {
     display: block;
     float: left;
-    padding-left: 8em;
+    padding-left: 3em;
   }
   .tech {
     text-align: left;
@@ -408,10 +416,12 @@ footer {
   .social {
     width: 100px;
   }
-  #aboutme ul.first {
-    padding-left: 8em;
-    padding-right: 8em;
+  #aboutme ul.first,
+  #aboutme p {
+    padding-left: 3em;
+    padding-right: 3em;
   }
+
   #aboutme .second {
     padding-left: 10px;
     margin-left: 15px;
@@ -422,6 +432,16 @@ footer {
 }
 
 @media (min-width: 800px) {
+  #aboutme ul.first,
+  #aboutme p {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  #aboutme ul.inline {
+    margin-left: 100px;
+  }
+
   .siteheader {
     font-size: 1.6em;
   }
@@ -441,9 +461,16 @@ footer {
 }
 
 @media (min-width: 980px) {
-  .circle {
+  #aboutme ul.first,
+  #aboutme p {
+    margin-left: 150px;
     margin-right: 150px;
   }
+
+  #aboutme ul.inline {
+    margin-left: 150px;
+  }
+
   #contact div {
     margin-left: 12em;
   }
@@ -459,10 +486,8 @@ footer {
     margin-left: 12em;
     margin-right: 8em;
   }
-}
 
-@media (min-width: 1080px) {
   .circle {
-    margin-right: 250px;
+    margin-right: 50px;
   }
 }
