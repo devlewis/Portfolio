@@ -101,7 +101,7 @@ header {
 
 section {
   padding: 3%;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 section:nth-child(odd) {
@@ -300,6 +300,10 @@ footer {
 }
 
 @media (min-width: 600px) {
+  section {
+    padding-top: 60px;
+  }
+
   #aboutme p {
     text-align: left;
   }
