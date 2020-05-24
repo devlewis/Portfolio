@@ -3,13 +3,18 @@
 }
 
 body {
+  margin: 0;
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   color: rgb(22, 52, 150);
   text-align: center;
-  background: rgb(22, 52, 150);
+  height: 100%;
+  background-color: rgb(22, 52, 150);
 }
 
+html {
+  height: 100%;
+}
 main {
   background: white;
 }
@@ -23,9 +28,28 @@ header {
   padding-bottom: 60px;
 }
 
+#sky {
+  overflow: hidden;
+}
+
 #cloud {
-  width: 100%;
+  display: inline-block;
+  width: 200%;
   height: 210px;
+  background-image: url("images/pinkclouds.5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-timing-function: ease-in-out;
+  animation: movingclouds 50s linear infinite;
+}
+
+@keyframes movingclouds {
+  from {
+    margin-left: -55%;
+  }
+  to {
+    margin-left: 100%;
+  }
 }
 
 .siteheader {
@@ -38,7 +62,7 @@ header {
 }
 
 .imagebottom {
-  width: 100%;
+  width: 50%;
   background-color: rgb(250, 219, 243);
   display: flex;
   align-self: end;
@@ -100,7 +124,7 @@ header {
 }
 
 .small {
-  animation: cssAnimation 0s 2s forwards;
+  animation: cssAnimation 0s 1.5s forwards;
   visibility: hidden;
 }
 
@@ -269,6 +293,7 @@ a.hover:visited {
 }
 
 .socialtech {
+  margin: 0;
   text-align: center;
   list-style: none;
 }
@@ -301,7 +326,7 @@ ul {
 }
 
 footer {
-  padding: 1% 0;
+  padding: 10px 0;
 }
 
 .sitesbox {
