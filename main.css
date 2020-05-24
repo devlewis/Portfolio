@@ -34,11 +34,13 @@ header {
 
 #cloud {
   display: inline-block;
-  width: 200%;
+  width: 100%;
   height: 210px;
   background-image: url("images/pinkclouds.5.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: auto;
 }
 
 .siteheader {
@@ -52,10 +54,8 @@ header {
 
 .imagebottom {
   width: 50%;
-  background-color: rgb(250, 219, 243);
+  margin: auto;
   display: flex;
-  align-self: end;
-  z-index: -1;
 }
 
 nav {
@@ -332,11 +332,13 @@ footer {
 
   #cloud {
     display: inline-block;
-    width: 200%;
+    width: 100%;
     height: 210px;
     background-image: url("images/pinkclouds.5.png");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: auto;
   }
   /* 
   @keyframes movingclouds {
@@ -543,5 +545,9 @@ footer {
 
   .circle {
     margin-right: 50px;
+  }
+
+  #cloud {
+    background-position-x: center;
   }
 }
