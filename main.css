@@ -39,17 +39,6 @@ header {
   background-image: url("images/pinkclouds.5.png");
   background-size: contain;
   background-repeat: no-repeat;
-  animation-timing-function: ease-in-out;
-  animation: movingclouds 50s linear infinite;
-}
-
-@keyframes movingclouds {
-  from {
-    margin-left: -55%;
-  }
-  to {
-    margin-left: 100%;
-  }
 }
 
 .siteheader {
@@ -337,6 +326,28 @@ footer {
 }
 
 @media (min-width: 600px) {
+  #sky {
+    overflow: hidden;
+  }
+
+  #cloud {
+    display: inline-block;
+    width: 200%;
+    height: 210px;
+    background-image: url("images/pinkclouds.5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  /* 
+  @keyframes movingclouds {
+    from {
+      margin-left: -55%;
+    }
+    to {
+      margin-left: 100%;
+    }
+  } */
+
   section {
     padding-top: 60px;
   }
