@@ -14,6 +14,7 @@ body {
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 main {
   background: white;
@@ -384,11 +385,20 @@ footer {
     text-align: right;
     display: inline-block;
   }
+
+  .navbardesktop li,
+  .navbardesktop a,
+  .logo {
+    transition: color 0.75s ease;
+  }
+
   .navbardesktop li:hover,
-  .navbardesktop a:hover {
+  .navbardesktop a:hover,
+  .logo:hover {
     color: rgb(240, 97, 204);
     cursor: pointer;
   }
+
   .navbardesktop li:last-child {
     margin-right: 20px;
   }
