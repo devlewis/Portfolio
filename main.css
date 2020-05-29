@@ -389,7 +389,7 @@ footer {
   .navbardesktop li,
   .navbardesktop a,
   .logo {
-    transition: color 0.75s ease;
+    transition: color 0.5s ease;
   }
 
   .navbardesktop li:hover,
