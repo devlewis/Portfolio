@@ -273,8 +273,13 @@ a.hover:visited {
 
 .social {
   display: inline-block;
-  width: 23%;
+  width: 4em;
   vertical-align: middle;
+  margin-left: 5%;
+}
+
+li.social:first-child {
+  margin-left: 0;
 }
 
 .social img {
@@ -284,8 +289,6 @@ a.hover:visited {
 
 .socialtech {
   margin: 0;
-  text-align: center;
-  list-style: none;
 }
 
 .circle {
@@ -425,9 +428,6 @@ footer {
     padding-left: 3em;
   }
 
-  .social {
-    width: 100px;
-  }
   #aboutme ul.first,
   #aboutme p {
     padding-left: 3em;
