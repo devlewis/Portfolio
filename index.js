@@ -3,6 +3,16 @@ function toggleClass() {
   menu.classList.toggle("toggleCls");
 }
 
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 75) {
+      $("nav").addClass("scrolled");
+    } else {
+      $("nav").removeClass("scrolled");
+    }
+  });
+});
+
 $(".toportfolio").on("click", function (event) {
   var elmnt = document.getElementById("portfolio");
   elmnt.scrollIntoView({ behavior: "smooth" });
