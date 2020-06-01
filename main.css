@@ -6,10 +6,10 @@ body {
   margin: 0;
   font-family: "Rubik", sans-serif;
   font-size: 20px;
-  color: rgb(22, 52, 150);
+  color: rgb(66, 66, 66);
   text-align: center;
   height: 100%;
-  background-color: rgb(22, 52, 150);
+  background-color: rgb(240, 97, 204);
 }
 
 html {
@@ -49,10 +49,6 @@ header {
   font-size: 1.25em;
 }
 
-.hover:hover {
-  color: rgb(250, 219, 243);
-}
-
 .imagebottom {
   width: 50%;
   margin: auto;
@@ -61,14 +57,15 @@ header {
 
 nav {
   padding: 1% 0;
-  background-color: rgb(22, 52, 150);
+  background-color: rgba(255, 255, 255, 0.842);
   position: fixed;
   text-align: right;
   top: 0;
   left: 0;
   right: 0;
-  font-size: 1.5em;
+  font-size: 0.75em;
   z-index: 10;
+  box-shadow: 0px 5px 0px -77px rgb(0, 0, 0);
 }
 
 .navbardesktop {
@@ -81,7 +78,7 @@ nav {
 
 .navbardesktop li {
   display: block;
-  color: rgb(250, 219, 243);
+  color: rgb(66, 66, 66);
   text-decoration: none;
   text-align: right;
   list-style: none;
@@ -90,7 +87,7 @@ nav {
 }
 
 .navbardesktop a {
-  color: rgb(250, 219, 243);
+  color: rgb(66, 66, 66);
   text-decoration: none;
   list-style: none;
 }
@@ -100,7 +97,7 @@ nav {
   position: absolute;
   left: 20px;
   margin-top: 12.5px;
-  color: rgb(250, 219, 243);
+  color: rgb(240, 97, 204);
 }
 
 h1 {
@@ -153,7 +150,7 @@ section#aboutme ul {
 .hamburger {
   font-size: 1.5em;
   line-height: 1.5;
-  color: rgb(250, 219, 243);
+  color: rgb(240, 97, 204);
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 20px;
@@ -166,16 +163,17 @@ section#aboutme ul {
 
 button {
   background-color: rgba(240, 97, 204, 0.199);
-  border: solid rgb(22, 52, 150);
-  color: rgb(22, 52, 150);
+  border: solid rgb(66, 66, 66);
+  color: rgb(66, 66, 66);
   font-size: 1.25em;
   display: block;
+  transition: all 0.2s ease-in-out;
 }
 
-button:hover {
-  background-color: rgb(22, 52, 150);
-  color: rgb(240, 97, 204);
+button:hover,
+.pfimg2:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 #portfolio {
@@ -199,11 +197,13 @@ button:hover {
   margin-top: 10px;
   width: 120px;
   height: 246px;
+  transition: all 0.2s ease-in-out;
 }
 
 .pfimg2 {
   margin-top: 10px;
   width: 95%;
+  transition: all 0.2s ease-in-out;
 }
 
 .tech {
@@ -242,11 +242,8 @@ button:hover {
   font-size: 1em;
 }
 
-#portfolio a {
-  color: white;
-}
-
-#portfolio a:visited {
+#portfolio a,
+.hover {
   color: rgb(240, 97, 204);
 }
 
@@ -254,15 +251,11 @@ button:hover {
   margin-bottom: 15px;
 }
 
-a.hover:visited {
-  color: rgb(240, 97, 204);
-}
-
 .pdiv {
-  color: white;
-  border: 3px solid rgb(22, 52, 150);
+  color: black;
+  border: 3px transparent rgba(240, 97, 204, 0.103);
   border-radius: 1%;
-  background-color: rgb(22, 52, 150);
+  background-color: rgba(0, 0, 0, 0.103);
   margin-bottom: 40px;
   padding: 20px;
   box-shadow: 0 2.8px 2.2px rgba(000, 0, 0, 0.034),
@@ -292,9 +285,10 @@ li.social:first-child {
 }
 
 .circle {
-  border: solid rgb(22, 52, 150) 2px;
+  border: solid rgb(240, 97, 204) 2px;
   border-radius: 50%;
   width: 50%;
+  height: 50%;
 }
 
 ul {
@@ -362,11 +356,6 @@ footer {
     text-align: left;
   }
 
-  .logo:hover {
-    color: rgb(240, 97, 204);
-    cursor: pointer;
-  }
-
   .navbardesktop {
     display: contents;
   }
@@ -391,17 +380,23 @@ footer {
 
   .navbardesktop li,
   .navbardesktop a,
-  .logo {
+  .logo,
+  #portfolio a {
     transition: color 0.5s ease;
   }
 
   .navbardesktop li:hover,
-  .navbardesktop a:hover,
-  .logo:hover {
+  .navbardesktop a:hover {
     color: rgb(240, 97, 204);
     cursor: pointer;
   }
 
+  .logo:hover,
+  #portfolio a:hover,
+  .hover:hover {
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+  }
   .navbardesktop li:last-child {
     margin-right: 20px;
   }
