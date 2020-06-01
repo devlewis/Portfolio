@@ -177,7 +177,8 @@ button {
 
 button:hover,
 .pfimg2:hover,
-.pfimg:hover {
+.pfimg:hover,
+li.social:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -275,6 +276,7 @@ button:hover,
   width: 4em;
   vertical-align: middle;
   margin-left: 5%;
+  transition: all 0.2s ease-in-out;
 }
 
 li.social:first-child {
@@ -405,7 +407,8 @@ footer {
   .navbardesktop li,
   .navbardesktop a,
   .logo,
-  #portfolio a {
+  #portfolio a,
+  .hover {
     transition: color 0.5s ease;
   }
 
