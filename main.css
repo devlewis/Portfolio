@@ -51,6 +51,8 @@ header {
   width: 50%;
   margin: auto;
   display: flex;
+  background-color: transparent;
+  margin-top: 100px;
 }
 
 nav {
@@ -133,10 +135,6 @@ section {
 
 section:nth-child(odd) {
   background-color: rgba(240, 97, 204, 0.103);
-}
-
-.imagebottom {
-  background-color: transparent;
 }
 
 header,
@@ -471,6 +469,10 @@ footer {
 }
 
 @media (min-width: 810px) {
+  .imagebottom {
+    margin-top: 75px;
+  }
+
   .litech img {
     width: 2em;
   }
@@ -551,6 +553,10 @@ footer {
 }
 
 @media (min-width: 980px) {
+  .imagebottom {
+    margin-top: 60px;
+  }
+
   #aboutme ul.first,
   #aboutme p {
     margin-left: 150px;
