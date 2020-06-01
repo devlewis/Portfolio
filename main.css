@@ -221,7 +221,7 @@ button:hover,
 
 .litech img {
   display: inline-block;
-  width: 2.5em;
+  width: 2em;
 }
 
 .litech {
@@ -261,7 +261,7 @@ button:hover,
   color: black;
   border: 3px transparent rgba(240, 97, 204, 0.103);
   border-radius: 1%;
-  background-color: rgba(0, 0, 0, 0.103);
+  background-color: rgba(0, 0, 0, 0.055);
   margin-bottom: 40px;
   padding: 20px;
   box-shadow: 0 2.8px 2.2px rgba(000, 0, 0, 0.034),
@@ -337,6 +337,17 @@ footer {
   .pfimg {
     width: 160px;
     height: 330px;
+  }
+
+  .litech img {
+    display: inline-block;
+    width: 2.25em;
+  }
+}
+
+@media (min-width: 520px) {
+  .litech img {
+    width: 2.5em;
   }
 }
 
@@ -456,9 +467,9 @@ footer {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 810px) {
   .litech img {
-    width: 1.75em;
+    width: 2em;
   }
 
   .tech {
@@ -525,10 +536,6 @@ footer {
     font-size: 1.6em;
   }
 
-  .litech img {
-    width: 2.5em;
-  }
-
   .pfimg {
     width: 140px;
     height: 290px;
@@ -558,6 +565,10 @@ footer {
   .pfimg {
     width: 180px;
     height: 380px;
+  }
+
+  .litech img {
+    width: 2.5em;
   }
 }
 
