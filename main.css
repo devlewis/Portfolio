@@ -9,7 +9,7 @@ body {
   color: rgb(66, 66, 66);
   text-align: center;
   height: 100%;
-  background-color: rgb(240, 97, 204);
+  background-color: rgb(66, 66, 66);
 }
 
 html {
@@ -171,7 +171,8 @@ button {
 }
 
 button:hover,
-.pfimg2:hover {
+.pfimg2:hover,
+.pfimg:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -337,16 +338,13 @@ footer {
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: auto;
+    position: relative;
+    transition: all 60s linear;
   }
-  /* 
-  @keyframes movingclouds {
-    from {
-      margin-left: -55%;
-    }
-    to {
-      margin-left: 100%;
-    }
-  } */
+
+  #cloud:hover {
+    transform: translate(400px, 0);
+  }
 
   section {
     padding-top: 60px;
