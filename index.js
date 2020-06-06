@@ -40,3 +40,31 @@ $(".logo").on("click", function (event) {
   var elmnt = document.getElementById("cloud");
   elmnt.scrollIntoView({ behavior: "smooth" });
 });
+
+$(".toportfolio").on("focus", function (event) {
+  var elmnt = document.getElementById("portfolio");
+  elmnt.scrollIntoView({ behavior: "smooth" });
+});
+
+$(".toportfoliomenu").on("focus", function (event) {
+  var elmnt = document.getElementById("portfolio");
+  elmnt.scrollIntoView({ behavior: "smooth" });
+  toggleClass();
+});
+
+$(".toaboutme").on("focus", function (event) {
+  var elmnt = document.getElementById("aboutme");
+  elmnt.scrollIntoView({ behavior: "smooth" });
+  toggleClass();
+});
+
+$(".tocontact").on("focus", function (event) {
+  var elmnt = document.getElementById("contact");
+  elmnt.scrollIntoView({ behavior: "smooth" });
+  toggleClass();
+});
+
+$(".logo").on("focus", function (event) {
+  var elmnt = document.getElementById("cloud");
+  elmnt.scrollIntoView({ behavior: "smooth" });
+});
