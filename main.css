@@ -189,7 +189,7 @@ li.social:hover {
 .col-left {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px 20px 10px 10px;
   margin-bottom: 20px;
 }
